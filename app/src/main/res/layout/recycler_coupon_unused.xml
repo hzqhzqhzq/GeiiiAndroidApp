@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <yyydjk.com.library.CouponView
+        android:id="@+id/couponView1"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:cv_dash_line_color="@color/size_chart_eee"
+        app:cv_dash_line_gap="5dp"
+        app:cv_dash_line_height="1dp"
+        app:cv_dash_line_length="10dp"
+        app:cv_dash_line_margin_bottom="30dp"
+        app:cv_is_dash_line_bottom="true"
+        app:cv_is_dash_line_left="false"
+        app:cv_is_dash_line_right="false"
+        app:cv_is_dash_line_top="false"
+        app:cv_is_semicircle_bottom="true"
+        app:cv_is_semicircle_left="true"
+        app:cv_is_semicircle_right="false"
+        app:cv_is_semicircle_top="true"
+        app:cv_semicircle_color="@color/border_grey"
+        app:cv_semicircle_gap="4dp"
+        app:cv_semicircle_radius="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar">
+
+    </yyydjk.com.library.CouponView>
+
+    <yyydjk.com.library.CouponView
+        android:id="@+id/couponView2"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="2dp"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:cv_dash_line_color="@android:color/white"
+        app:cv_dash_line_gap="5dp"
+        app:cv_dash_line_height="0.8dp"
+        app:cv_dash_line_length="10dp"
+        app:cv_is_dash_line_bottom="false"
+        app:cv_is_dash_line_left="false"
+        app:cv_is_dash_line_right="false"
+        app:cv_is_dash_line_top="false"
+        app:cv_is_semicircle_bottom="true"
+        app:cv_is_semicircle_left="false"
+        app:cv_is_semicircle_right="true"
+        app:cv_is_semicircle_top="true"
+        app:cv_semicircle_color="@color/border_grey"
+        app:cv_semicircle_gap="4dp"
+        app:cv_semicircle_radius="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/couponView1"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </yyydjk.com.library.CouponView>
+
+    <TextView
+        android:id="@+id/coupon_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textColor="@color/save_sku_bkg"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/coupon_disable_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textColor="@color/save_sku_bkg"
+        app:layout_constraintEnd_toEndOf="@+id/couponView1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coupon_price" />
+
+    <TextView
+        android:id="@+id/coupon_disable_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textColor="@color/save_sku_bkg"
+        app:layout_constraintEnd_toEndOf="@+id/couponView1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coupon_disable_name" />
+
+    <TextView
+        android:id="@+id/coupon_end_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/couponView1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/coupon_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_fff_rd10"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/use_it"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/couponView2"
+        app:layout_constraintEnd_toEndOf="@+id/couponView2"
+        app:layout_constraintStart_toEndOf="@+id/couponView1"
+        app:layout_constraintTop_toTopOf="@+id/couponView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

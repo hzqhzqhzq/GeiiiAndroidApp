@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="flashdeal">Flash Deals</string>
+    <string name="sale_promotion">Sale Promotion</string>
+
+    <string name="end_time">End Time</string>
+    <string name="checkout">CHECKOUT</string>
+    <string name="facebook_login_tips">It is recommended to sign in with Facebook, which is convenient for view orders and tracking delivery information.</string>
+    <string name="or">OR</string>
+    <string name="direct_login">Shopping without sign in</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="shopping_cart">Shopping Cart</string>
+    <string name="done">DONE</string>
+    <string name="reset">RESET</string>
+    <string name="filter">Filter</string>
+    <string name="price">Price</string>
+    <string name="delete">DELETE</string>
+    <string name="unused">Unused</string>
+    <string name="expired">Expired</string>
+    <string name="used">Used</string>
+    <string name="to_exchange">TO EXCHANGE</string>
+    <string name="no_coupons">No Coupons</string>
+    <string name="expired_on">Expired On</string>
+    <string name="use_it">Use It</string>
+    <string name="sold">Sold</string>
+    <string name="end">End</string>
+    <string name="to_end">To End</string>
+    <string name="select_coupon">Select Coupon</string>
+    <!-- firebase -->
+    <string name="msg_token_fmt" translatable="false">FCM registration Token: %s</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="fcm_message">FCM Message</string>
+    <string name="description">Description</string>
+    <string name="product_details_tips">" เก็บเงินปลายทาง ไม่ถูกใจคืนของได้ "</string>
+    <string name="sold_tips">pieces sold</string>
+    <string name="product_add_tips_1">เพิ่มไปยังรถเข็น</string>
+    <string name="product_add_tips_2">ซื้อเพิ่มมีส่วนลด</string>
+    <string name="Hint_Title">"hint title"</string>
+    <!-- firebase -->
+</resources>

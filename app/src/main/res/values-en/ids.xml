@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="product_details_also_like_title" type="id" />
+    <item name="product_details_also_like_recyclerview" type="id" />
+    <item name="description_image_recyclerview" type="id" />
+    <item name="description_content_recyclerview" type="id" />
+</resources>

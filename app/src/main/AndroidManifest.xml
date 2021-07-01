@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sheiii.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 系统悬浮框权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".util.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".view.activity.ActivityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.flashdeal.FlashDealActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.wallet.WalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.point.PointActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.coupon.CouponActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.wishlist.WishListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.category.CategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.login.FacebookLoginActivity"
+            android:screenOrientation="portrait" />
+<!--        <activity-->
+<!--            android:name=".BaseActivity"-->
+<!--            android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".view.account.ImageCutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.account.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.account.FeedBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.account.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.account.SupportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.order.OrderDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.order.OrderTrackingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.order.OrderProcessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.account.ChangeCurrencyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.policy.PolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.check.OrderSuccessActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name="com.soundcloud.android.crop.CropImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.check.CheckActivity"
+            android:screenOrientation="portrait">
+
+            <!-- 打开网页后返回 -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="my.com"
+                    android:scheme="m" />
+            </intent-filter>
+        </activity> <!-- facebook登录 -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <!--android:label="@string/app_name"-->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.login.LoginActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="com.facebook.sdk.ApplicationId"
+                android:value="@string/facebook_app_id" />
+        </activity>
+        <activity
+            android:name=".view.address.AddressActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".view.productdetails.sizechart.SizeChartActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.productdetails.reviewsdetails.ReviewsDetailsActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" /> <!-- android:launchMode="standard" -->
+        <activity
+            android:name=".view.productdetails.ProductDetailsActivity"
+            android:label="@string/title_activity_product_details"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <!-- <meta-data -->
+            <!-- android:name="android.support.PARENT_ACTIVITY" -->
+            <!-- android:value=".MainActivity" /> -->
+        </activity>
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- android:launchMode="standard" -->
+        <!--            android:label="@string/app_name">-->
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

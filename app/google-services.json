@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "409278212698",
+    "project_id": "com-sheiii-app",
+    "storage_bucket": "com-sheiii-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409278212698:android:a52d8cd2377fa3f52fc663",
+        "android_client_info": {
+          "package_name": "com.sheiii.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "409278212698-6off9431744mr2ec1e1lqnqekc41o05n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLeU8ezqpklY11xNGSThfvAWosSmWqCTQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "409278212698-6off9431744mr2ec1e1lqnqekc41o05n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

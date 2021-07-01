@@ -1,0 +1,16 @@
+<resources>
+    <declare-styleable name="FullscreenAttrs">
+        <attr name="fullscreenBackgroundColor" format="color" />
+        <attr name="fullscreenTextColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="WaveSwipeHeader">
+        <attr name="wshPrimaryColor" format="color" />
+        <attr name="wshAccentColor" format="color" />
+        <attr name="wshShadowColor" format="color" />
+        <attr name="wshShadowRadius" format="dimension"/>
+        <attr name="srlPrimaryColor"  />
+        <attr name="srlAccentColor" />
+        <attr name="srlShadowColor" />
+        <attr name="srlShadowRadius" />
+    </declare-styleable>
+</resources>

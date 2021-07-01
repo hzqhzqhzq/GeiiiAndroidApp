@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_color_666">#666666</color>
+    <color name="background_f8">#f8f8f8</color>
+    <color name="direct_login_background_color">#F85184</color>
+    <color name="coupon_disable_left_back">#CCCCCC</color>
+    <color name="coupon_disable_right_back">#999999</color>
+    <color name="text_color_fff" >#ffffff</color>
+    <color name="flash_deal_count_down_back">#FCEDEB</color>
+    <color name="sold_number_text">#FF5000</color>
+    <color name="product_add_tips_background">#FFC107</color>
+    <color name="check_color">#f85184</color>
+</resources>
